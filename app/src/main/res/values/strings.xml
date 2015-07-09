@@ -13,5 +13,8 @@
     <string name="plus_video_chat">视频聊天</string>
     <string name="plus_scan">扫一扫</string>
     <string name="plus_take_photo">拍照分享</string>
+    <string name="title_activity_chat">聊天界面</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>

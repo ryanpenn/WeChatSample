@@ -1,5 +1,6 @@
 package com.example.pennryan.wechatsample.fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -14,7 +15,9 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.pennryan.wechatsample.ChatActivity;
 import com.example.pennryan.wechatsample.R;
 import com.example.pennryan.wechatsample.slideview.ListViewCompat;
 import com.example.pennryan.wechatsample.slideview.SlideView;
@@ -86,7 +89,8 @@ public class ChatFragment extends Fragment
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+        Toast.makeText(getActivity(), "itemClick: " + i, Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(getActivity(), ChatActivity.class));
     }
 
     @Override
